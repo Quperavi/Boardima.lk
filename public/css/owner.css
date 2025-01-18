@@ -1,0 +1,103 @@
+.marginlefting {
+    margin-left: 60px !important;
+  }
+
+  .displaynone {
+    display: none !important;
+  }
+
+  .displayblock {
+    display: block !important;
+  }
+
+  .sidebar .item i {
+    font-size: 24px;
+    margin-top: -5px !important;
+  }
+
+  .logo {
+    height: 48px !important;
+    padding: 10px !important;
+  }
+
+  .logo img {
+    width: 100% !important;
+    height: 38px !important;
+  }
+
+  .title.item {
+    padding: .92857143em 1.14285714em !important;
+  }
+
+  .dropdown .menu .header {
+    padding-top: 3.9px!important;
+    padding-bottom: 3.9px!important;
+  }
+
+.container-login{
+  position: absolute;
+
+  top: 25%;
+}
+
+.card-logim{
+  border-radius: 25% !important;
+}
+
+.container-register{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.no-radius{
+    border-radius: 0% !important;
+    border-color:white !important;
+}
+
+.border-main-1{
+   border-top-left-radius: 10px !important;
+   border-bottom-left-radius: 10px !important;
+}
+
+.border-main-2{
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+ }
+
+ .border-main-login-1{
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+ }
+
+ .border-main-login-2{
+     border-top-left-radius: 10px !important;
+     border-bottom-left-radius: 10px !important;
+  }
+
+.registration-main{
+    filter: drop-shadow(1px 2px 20px #000000);
+}
+
+.image-cover{
+    background-image: url('../assest/img/register.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-login-cover{
+    background-image: url('../assest/img/login.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.select-2-selection{
+    height: 75%
+  }
+
+  .property-add-card{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }

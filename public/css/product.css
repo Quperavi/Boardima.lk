@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Noto+Serif+Sinhala&family=Open+Sans&family=Roboto:wght@400;500&display=swap');
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+.filter-text{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.custom-button{
+  background-color:white !important ;
+  font-weight: 500 !important;
+  color:#333 !important;
+  border: none !important;
+  box-shadow: 0px 0px 24px -9px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0px 0px 24px -9px rgba(0, 0, 0, 0.5);
+}
+
+.boad-address{
+  color: #696969;
+  font-weight: 500;
+  font-size:medium;
+}
+
+.card-info-text{
+  color: #F45050 !important;
+  font-size: smaller;
+}
+
+.boading-title{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600 !important;
+}
+
+input[type="radio"]:checked + label {
+  background-color:#F5F4F8 !important ;
+  color: #F45050 !important; /* You can change the fill color when checked */
+  box-shadow: none;
+-webkit-box-shadow: none;
+}
+
+.hero-section{
+  margin-top: 90px !important;
+  margin-bottom: 260px !important;
+}
+
+
+.overview-text{
+  color:  #696969;
+  line-height: 1.5;
+  font-size: medium;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.head-title{
+  letter-spacing: 0.5px;
+  font-weight: 600 !important;
+}
+
+.anex-price{
+  font-family: 'Lato', sans-serif;
+}
+
+.gallery-item img{
+  border-radius: 10px;
+  max-height: 700px;
+  margin-bottom: 15px;
+}
+
+.single-title{
+  font-family: 'Lato', sans-serif;
+  font-size: 58px !important;
+}
+
+.breadcrumb li a{
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  font-style: none !important;
+  text-decoration: none;
+  color: #9BA4B5;
+}
+
+.active-breadcrumb{
+  color: #CE5959;
+}
+
+.home-address{
+  color: #666276;
+  font-family: 'Lato', sans-serif;
+}
+
+.icon-padding{
+  padding-right: 5px;
+  color: #66627A !important;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.home-svg{
+  bottom: 0px;
+  z-index: 3443;
+}
+
+.jpura-text{
+  color: #800000;
+}
+.item-short-desc, .icon-item-text{
+  padding-top: 10px;
+}
+
+.boading-text{
+  font-family: 'Noto Serif Sinhala', serif !important;
+  color: #E55807;
+
+}
+
+
+.navbar{
+  background-color: #EEE2DE !important;
+  z-index: 999999999 !important;
+}
+
+.about-title{
+  color: #B31312;
+}
+
+.color-about-text{
+  color: #575B5E;
+}
+
+.icon-square{
+  background-color: #EA906C;
+}
+
+.select-2-selection{
+  height: 75%
+}
+
+#scrollable-content{
+  height: 30px;
+}
+
+.outer-container {
+  height: 30px;
+  overflow: auto;
+  /* You can add other styles like background color, border, etc. as needed */
+}
+
+.custom-card-2{
+  border: none !important;
+  box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.5);
+}
+
+.card-footer{
+  border-top: none !important;
+}
+
+.custom-card{
+  border: none !important;
+  box-shadow: 0px 0px 24px -12px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0px 0px 24px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the inner container, which will hold the scrollable content */
+.inner-container {
+  /* Set the height to be larger than the outer container to enable scrolling */
+  height: 50px; /* You can adjust this height based on your content */
+  /* Add other styles as needed */
+}
+
+#map {
+  height: 400px;
+}
+
+
+.form-label{
+  font-weight: 600;
+}
+
+.why-us{
+  background-color: #F7F7F9;
+}
+
+.item-short-desc{
+  color: #575B5E;
+}
+
+.main-brand-item{
+  padding-right: 40px !important;
+}
+
+.login-button{
+  font-weight: 700 !important;
+  font-size: large !important;
+  color: #2B2A4C !important;
+}
+.nav-item .nav-link{
+  color: #2B2A4C;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.icon-link > .bi {
+  width: .75em;
+  height: .75em;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #8e8e8e;
+  transition: color .15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #6528e0;
+  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #5a23c8;
+  --bs-btn-active-border-color: #5a23c8;
+}
+
+h1.title {
+    padding:25px;
+    font-size:30px;
+    font-weight: 100;;
+  }
+
+  .margin-bottom-40 {
+    margin-bottom:40px;
+  }
+
+  /* Button Sizes*/
+
+  .btn-mod.btn-large {
+      height: auto;
+      padding: 13px 52px;
+      font-size: 15px;
+  }
+
+  .btn-mod.btn-medium {
+      height: auto;
+      padding: 10px 35px;
+      font-size: 13px;
+  }
+
+  .btn-mod.btn-small {
+      height: auto;
+      padding: 6px 16px;
+      font-size: 12px;
+  }
+
+  /* Button Mod to the original Bootstrap Buttons */
+
+  .btn-mod.btn-circle {
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+  }
+
+  .btn-mod.btn-border {
+      color: #000000;
+      border: 2px solid #000000;
+      background: transparent;
+  }
+
+  .btn-mod, a.btn-mod {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 4px 13px;
+      color: #fff;
+      background: rgba(34,34,34, .9);
+      border: 2px solid transparent;
+      font-size: 11px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 2px;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+      -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+      -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+      -ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+      transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  }
+
+  .btn-mod.btn-border:hover, .btn-mod.btn-border:focus{
+      color: #fff;
+      border-color: transparent;
+      background: #000;
+  }
+
+  .btn-mod:hover, .btn-mod:focus, a.btn-mod:hover, a.btn-mod:focus {
+      font-weight: 400;
+      color: rgba(255,255,255, .85);
+      background: rgba(0,0,0, .7);
+      text-decoration: none;
+      outline: none;
+      border-color: transparent;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+  }
+
+  /* Reveal icon on hover */
+
+  a.btn.btn-mod.btn-border.animation-one span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+  }
+
+  a.btn.btn-mod.btn-border.animation-one span:after {
+    font-family: FontAwesome;
+    content: "\f105";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+  }
+
+  a.btn.btn-mod.btn-border.animation-one:hover span {
+    padding-right: 25px;
+  }
+
+  a.btn.btn-mod.btn-border.animation-one:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  /* Footer styling */
+
+  .footer i.fa.fa-heart{
+    color:red;
+  }
+
+  p.footer-text {
+      font-weight: 100;
+  }
+
+  .project-url{
+
+    text-decoration: none !important;
+    color: inherit;
+
+  }
+
+  .avatar-owner{
+    top:  -50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.owner-contact{
+    filter: drop-shadow(5px 5px 10px #000000);
+    position: absolute;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+

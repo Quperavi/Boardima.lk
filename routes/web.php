@@ -34,6 +34,13 @@ Route::get('/dashboard', function () {
 
 })->middleware('auth.check')->name('dashboard');
 
+Route::get('/student-dashboard', function () {
+
+    $features = DB::table('features')->get();
+    return view('student/boadAdd', ['features' => $features]);
+
+})->middleware('auth.check:student')->name('student_dashboard');
+
 Route::get('/manageBoading', function () {
     return view('owner/boadingManage');
 

@@ -14,10 +14,14 @@ class AuthCheck
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle(Request $request, Closure $next): Response
+    public function handle(Request $request, Closure $next, $role = "owner"): Response
     {
          // Check if the user is authenticated
          if (Auth::check()) {
+
+            if ( Auth::user()->role !== $role) {
+                return redirect('/login')->with('error', 'Unauthorized access. Please log in.');
+            }
             return $next($request); // User is authenticated, proceed to the next middleware or route
         }
 

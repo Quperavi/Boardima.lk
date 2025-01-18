@@ -23,7 +23,21 @@ class authController extends Controller
             $credentials = $request->only('email','password');
 
             if(Auth::attempt($credentials)){
-                return redirect()->intended(route('dashboard'));
+
+                $user = Auth::user();
+
+                // Access the user's role
+                $role = $user->role;
+
+                // Check the user's role
+                if ($role == 'student') {
+                    // Redirect to admin dashboard
+                    return redirect()->intended(route('student_dashboard'));
+                } else {
+                    // Redirect to user dashboard
+                    return redirect()->intended(route('dashboard'));
+                }
+
             }
 
             return redirect()->route('login')->withErrors("User Name Or Password Invalid");
@@ -61,9 +75,11 @@ class authController extends Controller
                 'name' => $data['name'],
                 'email' => $data['email'],
                 'password' => Hash::make($data['password']),
+                'role' => 'student',
             ]);
 
             if($registred){
+
                 $user = User::find($registred->id);
                 if($user){
 
@@ -81,7 +97,7 @@ class authController extends Controller
                 };
             }
 
-            return redirect()->intended(route('dashboard'));
+            return redirect()->intended(route('login'));
         }catch (\Exception $e){
             error_log($e);
             return redirect()->route('register')->withErrors($e->errors())->withInput();
